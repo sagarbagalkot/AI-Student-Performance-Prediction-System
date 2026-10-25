@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f8ff;
+}
+
+.navbar{
+    background:orange;
+    padding:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.navbar-brand{
+    color:white !important;
+    font-size:24px;
+    font-weight:700;
+}
+
+.result-section{
+    padding:40px 15px;
+}
+
+.result-card{
+    background:white;
+    max-width:700px;
+    margin:auto;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.result-card:hover{
+    transform:translateY(-8px);
+}
+
+.result-card h1{
+    color:orchid;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.result-card h2{
+    color:#133a75;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.result-card p{
+    color:#555;
+    font-size:17px;
+    margin-top:15px;
+    line-height:1.7;
+}
+
+.icon{
+    font-size:80px;
+    margin:20px 0;
+}
+
+.pass-icon{
+    color:green;
+}
+
+.fail-icon{
+    color:red;
+}
+
+.pass-text{
+    color:green !important;
+    font-weight:700;
+}
+
+.fail-text{
+    color:red !important;
+    font-weight:700;
+}
+
+.confidence{
+    color:hotpink;
+    font-weight:600;
+    margin-top:15px;
+}
+
+.btn{
+    padding:10px 25px;
+    border-radius:10px;
+    font-weight:600;
+    margin:8px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:orange;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:darkorange;
+    transform:translateY(-3px);
+}
+
+.btn-success:hover{
+    transform:translateY(-3px);
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+    .result-section{
+        padding:40px 15px;
+    }
+
+    .result-card{
+        padding:25px;
+    }
+
+    .result-card h1{
+        font-size:28px;
+    }
+
+    .result-card h2{
+        font-size:22px;
+    }
+
+    .icon{
+        font-size:60px;
+    }
+
+    .btn{
+        width:100%;
+        margin:8px 0;
+    }
+
+    .navbar-brand{
+        font-size:20px;
+    }
+
+}

@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f8ff;
+}
+
+/* Navbar */
+
+.navbar{
+    background:orange !important;
+    padding:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.navbar-brand{
+    color:white !important;
+    font-size:24px;
+    font-weight:700;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:15px;
+    font-weight:500;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:#fff8dc !important;
+}
+
+/* Dashboard Section */
+
+.container h1{
+    color:rgb(245, 6, 237);
+    font-weight:700;
+}
+
+.text-muted{
+    color:#666 !important;
+    font-size:18px;
+}
+
+
+.card{
+    background:white;
+    border:none;
+    padding:10px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    font-size:42px;
+    color:darkslateblue;
+    font-weight:700;
+}
+
+.card p{
+    color:#444;
+    font-size:18px;
+    font-weight:600;
+    margin-top:10px;
+}
+
+/* Student Table */
+
+.table-responsive{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:orange;
+    color:white;
+}
+
+.table th{
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table td{
+    text-align:center;
+    vertical-align:middle;
+}
+
+.table tbody tr:hover{
+    background:#f8f9fa;
+}
+
+/* Badge */
+
+.badge{
+    font-size:14px;
+    padding:8px 15px;
+    border-radius:30px;
+}
+
+/* Delete Button */
+
+.btn-danger{
+    border-radius:10px;
+    padding:6px 15px;
+    transition:.3s;
+}
+
+.btn-danger:hover{
+    transform:scale(1.05);
+}
+
+/* Section Heading */
+
+h2{
+    color:saddlebrown;
+    font-weight:700;
+}
+
+/* Footer */
+
+footer{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+margin-top:50px;
+
+}
+
+footer p{
+    margin:0;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .container h1{
+        font-size:30px;
+    }
+
+    .card h2{
+        font-size:32px;
+    }
+
+    .card p{
+        font-size:16px;
+    }
+
+    .table{
+        font-size:14px;
+    }
+
+    .navbar-brand{
+        font-size:20px;
+    }
+
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        About Project
+    </title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+
+        <div class="container">
+
+
+            <a class="navbar-brand fw-bold" href="/">
+                🎓 Student AI System
+            </a>
+
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+
+                <ul class="navbar-nav ms-auto">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">
+                            Home
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">
+                            Dashboard
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/prediction">
+                            Prediction
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/analysis">
+                            Analysis
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">
+                            About
+                        </a>
+                    </li>
+
+                    {% if session.get('user_id') %}
+
+                    <li class="nav-item">
+                        <span class="nav-link">
+                            👤 {{ session.get('username') }}
+                        </span>
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link text-danger" href="/logout">
+
+                            Logout
+
+                        </a>
+
+                    </li>
+
+                    {% endif %}
+
+
+
+                </ul>
+
+
+            </div>
+
+
+        </div>
+
+    </nav>
+
+
+    <section class="about-section">
+
+
+        <div class="container">
+
+            <div class="about-card">
+
+                <h1>
+
+                    🤖 Smart Student Result Analysis System
+
+                </h1>
+
+                <p>
+
+                    Smart Student Result Analysis System is an Artificial Intelligence
+                    and Machine Learning based web application designed to predict
+                    student academic performance.
+
+                </p>
+
+                <p>
+
+                    The system analyzes important factors like attendance,
+                    study hours, assignment marks, internal marks and previous
+                    academic records to generate performance predictions.
+
+                </p>
+
+            </div>
+
+            <h2 class="text-center mt-5">
+
+                Technology Stack
+
+            </h2>
+
+            <div class="row mt-4">
+
+                <div class="col-md-3">
+
+
+                    <div class="tech-card">
+
+                        🐍
+
+                        <h4>
+                            Python
+                        </h4>
+
+                        <p>
+                            Programming Language
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-3">
+
+
+                    <div class="tech-card">
+
+                        🤖
+
+                        <h4>
+                            Machine Learning
+                        </h4>
+
+                        <p>
+                            Prediction Model
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-3">
+
+
+                    <div class="tech-card">
+
+                        🌐
+
+                        <h4>
+                            Flask
+                        </h4>
+
+                        <p>
+                            Web Framework
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-3">
+
+
+                    <div class="tech-card">
+
+                        📊
+
+                        <h4>
+                            Data Analytics
+                        </h4>
+
+                        <p>
+                            Visualization
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="feature-box mt-5">
+
+
+                <h2>
+
+                    Project Features
+
+                </h2>
+
+
+                <ul>
+
+                    <li>
+                        Student Performance Prediction using ML
+                    </li>
+
+
+                    <li>
+                        Academic Data Analysis
+                    </li>
+
+
+                    <li>
+                        Interactive Dashboard
+                    </li>
+
+
+                    <li>
+                        Performance Visualization
+                    </li>
+
+
+                    <li>
+                        AI-based Student Insights
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <footer>
+
+        <p>
+            © 2026 AI Student Performance Prediction System | AI/ML Internship Project
+        </p>
+
+    </footer>
+</body>
+
+</html>
